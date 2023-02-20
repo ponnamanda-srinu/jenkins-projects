@@ -1,0 +1,7 @@
+pipeline{
+    stage('checkout code'){
+   }
+stage('build source code'){
+
+}
+}
