@@ -1,7 +1,13 @@
 pipeline{
     stage('checkout code'){
+    step{
+    git clone <url>
    }
 stage('build source code'){
+steps{
+mvn clean install
 
+}
+}
 }
 }
