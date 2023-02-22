@@ -6,5 +6,15 @@ pipeline{
                 echo 'hello srinu'
             }
         }
+        stages{
+            stage('sourcecode checkout'){
+                step{
+                    git credentialid:
+                    GIT_CREDENTIALS
+                    url:https://github.com/ponnamanda-srinu/jenkins-projects.git
+                    branch:'main'
+                }
+            }
+        }
     }
 }
