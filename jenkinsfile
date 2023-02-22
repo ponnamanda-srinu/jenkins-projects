@@ -19,6 +19,20 @@ pipeline {
                     sh 'mvn deploy'   
             }
         }
+        stages{
+            stage('sourcecode checkout'){
+                steps{
+                    git credentialsid:GIT_CREDENTIAL,
+                    url:'https://github.com/ponnamanda-srinu/jenkins-projects.git'
+                    branch:'main'
+                }
+                stage('Artifact clean'){
+                    stage{
+                        sh'./gradlew'
+                    }
+                }
+            }
+        }
 
         
     }
