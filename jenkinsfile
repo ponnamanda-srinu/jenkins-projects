@@ -1,4 +1,4 @@
-//credentials:
+
 def GIT_CREDENTIALS="ponnamanda-srinu"
 pipeline{
     agent any
@@ -12,7 +12,7 @@ pipeline{
                 steps{
                     sh 'git clone https://github.com/ponnamanda-srinu/jenkins-projects.git'
                     git credentialid:ponnamanda-srinu
-                    branch:'master'       
+                    branch:'main'       
                 }
         }
     }
