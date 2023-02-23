@@ -6,7 +6,7 @@ pipeline{
             stage('checkout code'){
                 steps{
                     script {
-                    sh 'git clone https://github.com/ponnamanda-srinu/office-document'
+                    sh 'git clone https://github.com/ponnamanda-srinu/office-document.git'
                     git credentialID: GIT_CREDENTIALS
                     } 
                 }
