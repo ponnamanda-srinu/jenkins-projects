@@ -3,16 +3,12 @@ def GIT_CREDENTIALS="ponnamanda-srinu"
 pipeline{
     agent any
     stages{
-        stage('stage1'){
-            steps{
-                'hello world'
-            }
-        }
             stage('checkout code'){
                 steps{
+                    script {
                     sh 'git clone https://github.com/ponnamanda-srinu/jenkins-projects.git'
-                    git credentialid:ponnamanda-srinu
-                    branch:'main'       
+                    git credentialID: GIT_CREDENTIALS
+                    } 
                 }
         }
     }
