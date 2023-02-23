@@ -12,7 +12,7 @@ pipeline{
                 steps{
                     sh 'git clone https://github.com/ponnamanda-srinu/jenkins-projects.git'
                     git credentialid:ponnamanda-srinu
-                    branch:'main'       
+                    branch:'master'       
                 }
         }
     }
