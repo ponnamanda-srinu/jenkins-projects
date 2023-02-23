@@ -7,6 +7,7 @@ pipeline{
                     script {
                     git credentialsID: GIT_CREDENTIALS
                     url: 'https://github.com/ponnamanda-srinu/office-document.git'
+                    branch : 'main'
                     } 
                 }
         }
