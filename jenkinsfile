@@ -1,3 +1,5 @@
+//credentials:
+def GIT_CREDENTIALS="ponnamanda-srinu"
 pipeline{
     agent any
     stages{
