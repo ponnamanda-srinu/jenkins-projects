@@ -1,4 +1,4 @@
-def GIT_CREDENTIALS= "new-credentials"
+def GIT_CREDENTIALS= "new_credentials"
 pipeline{
     agent any
     stages{
