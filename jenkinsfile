@@ -5,7 +5,7 @@ pipeline{
             stage('checkout code'){
                 steps{
                     script {
-                    git credentialID: GIT_CREDENTIALS
+                    git credentialsID: GIT_CREDENTIALS
                     url: 'https://github.com/ponnamanda-srinu/office-document.git'
                     } 
                 }
